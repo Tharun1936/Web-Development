@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+    <style>
+        .box:first-child{
+            background-color: red;
+        }
+        /* .box::first-line{ 
+            color: yellow;
+         }*/
+         .boxs *{
+            color: blue;
+            border: solid 2px black;
+         }
+         .boxs::before{
+            content:"Hii I am Tharun";
+            color: blue;
+            border: solid 2px black;
+         }
+         ::selection{
+            color: aqua;
+            background-color: black;
+         }
+         .boxs ::first-letter{
+            color: brown;
+            font-size: 25px;
+         }
+         input::placeholder{
+            color: rgb(165, 167, 175);
+            font-size: 15px;
+         }
+    </style>
+</head>
+<body>
+    <div class="boxs">
+        <div class="box">Hey I am Tharun</div>
+        <div class="box">Hlo</div>
+        <div class="box">Hey
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dignissimos molestiae illum quasi ad! Molestiae reprehenderit dolores minima odit, provident distinctio iusto ullam consequuntur minus praesentium expedita eius tempora nihil aperiam, soluta molestias recusandae fuga officia debitis ipsa. Eaque temporibus aspernatur pariatur tenetur molestias ab!
+        </div>
+        <input type="text" name="text" id="text" placeholder="Type your name">
+    </div>
+    
+</body>
+</html>

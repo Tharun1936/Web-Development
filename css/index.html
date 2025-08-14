@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS </title>
+    <style>
+        /*class selector*/
+        .red{
+            color: aquamarine;
+            background-color: black;
+        }
+        /* ID selectors */
+        #green{
+            color: blue;
+            background-color: green;
+        }
+        /* child selectors */
+        div>p{
+            color: blue;
+            background-color: brown;
+        }
+        /* desendent selectors */
+        div p{
+            color: azure;
+            background-color: brown;
+        }
+        /* universal selectors */
+        *{
+            margin: 0;
+            padding:0;
+        }
+        /* pseudo selectors */
+        a :visited{
+            color: red;
+        }
+        a :link{
+            color: green;
+        }
+        a:active{
+            color: brown;
+        }
+        a:hover{
+            color: yellow;
+        }
+
+        h1{
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+    <body>
+        <h1>
+            Hii I'm learning CSS
+        </h1>
+    <div class="red">
+        
+        Today I'm learning CSS
+        <p>I'm a Paragraph</p>
+        
+    </div>
+    <div id="green">
+        
+        Hii I'm Tharun
+        <article>
+            <p>I am Tharun</p>
+        </article>
+    </div>
+    <a href="http://www.google.com">Google</a>
+</body>
+</html>

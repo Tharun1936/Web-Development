@@ -1,0 +1,24 @@
+.rows{
+    border: solid 1px;
+    height: 150px;
+}
+
+.cols{
+    border: solid 2px;
+    display: inline-block;
+    height: 100%;
+    width: 33%;
+}
+
+.rows2{
+    border: solid;
+    height: 150px;
+    font-size: 0px;
+}
+
+.head{
+    font-size: 100px;
+    color: blue;
+    background-color: azure;
+    
+}

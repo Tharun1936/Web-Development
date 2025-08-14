@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+        /* it is global varible */
+        :root{
+            --color:rgb(32, 226, 220);
+            --seccolor: rgb(224, 39, 206);
+            --defpad:23px;
+            --defop:0.8;
+
+
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        .para{
+            background-color: var(--seccolor);
+            opacity: var(--defop);
+        }
+        ul li{
+            list-style: none;
+            padding: 15px;
+            opacity: 0.5;
+        }
+        ul{
+            display: flex;
+            padding: var(--defpad);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda perferendis, corrupti ab similique itaque incidunt voluptatibus, doloremque, animi eveniet vitae velit ipsam praesentium.
+    </div>
+    
+</body>
+</html>
